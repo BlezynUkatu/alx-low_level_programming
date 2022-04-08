@@ -2,18 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 
-/** 
- *  
+/* 
+ *
  * main - prints is positive and negetive
  * Return: returns zero if program exits weel
  */
-
 int main(void)
-{i
+{
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes here */
+		/* your code goes here */
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
