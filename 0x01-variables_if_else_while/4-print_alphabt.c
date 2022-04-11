@@ -4,7 +4,6 @@
 *
 *Return: Always 0 (success/correct)
 */
-
 int main(void)
 
 {
@@ -24,5 +23,4 @@ putchar(alphabet);
 putchar('\n');
 
 return (0);
-
 }
