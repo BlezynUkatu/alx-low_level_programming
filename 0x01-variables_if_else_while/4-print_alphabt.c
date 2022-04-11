@@ -1,25 +1,22 @@
 #include <stdio.h>
+
 /**
-*main - Entry point
-*
-*Return: Always 0 (success/correct)
-*/
+ * main - prints is posetive, negative
+ * or zero
+ *Return: returns zero if program exits well.
+ */
 int main(void)
-
 {
-char alphabet;
+char c = 'a';
 
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+while (c <= 'z')
 {
-if (alphabet == 'q')
-continue;
-
-else if (alphabet == 'e')
-continue;
-
-putchar(alphabet); 
+if (c != 'e' && c != 'q')
+{
+putchar(c);
+}
+c++;
 }
 putchar('\n');
-
 return (0);
 }
