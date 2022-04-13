@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - main block
  * Description: computes and prints the sum of all the multiples of 3 or
@@ -8,18 +7,22 @@
  */
 int main(void)
 {
-int c = 0;
-int sum = 0;
+int i = 0;
+long int a = 0, b = 1, next;
 
-while (c < 1024)
+while (i < 50)
 {
-if (c % 3 == 0 || c % 5 == 0)
-{
-sum += c;
-}
+next = a + b;
+a = b;
+b = next;
+printf("%lu", next);
 
-c++;
+if (i < 49)
+{
+printf(", ");
 }
-printf("%i\n", sum);
+i++;
+}
+putchar('\n');
 return (0);
 }
