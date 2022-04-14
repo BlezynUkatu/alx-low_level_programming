@@ -1,44 +1,21 @@
 #include "main.h"
+#include <stdio.h>
 /**
-* print_triangle -  prints triangle
-*@size: print size
-* Return: Always 0.
-*/
+ * print_number -prints int with putchar
+ * @n: takes number, hello
+ *
+ * Return: void
+ */
+void print_number(int n)
+{
+insigned int n;
 
-void print_triangle(int size)
+if (n < o)
 {
-
-int i;
-int z;
-int d;
-int p;
-
-if (size > 0)
-{
-d = size - i;
-for (i = 0; i < size ; i++)
-{
-for (z = d; z > 0 ; z--)
-{
-_putchar (' ');
+_putchar('-')
+m = n;
 }
-
-for (p = 0; p <= i; p++)
-{
-_putchar (35);
-}
-
-d--;
-
-_putchar ('\n');
-
-}
-
-}
-
-else
-{
-_putchar ('\n');
-}
-
+if (m / 10 != 0)
+print_number(m / 10);
+_putchar((m % 10) + '0');
 }
